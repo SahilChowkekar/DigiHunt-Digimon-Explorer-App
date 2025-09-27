@@ -1,13 +1,13 @@
 
-# 📱 DigiHunt
+# DigiHunt
 
 A sleek and reactive iOS app for exploring Digimon, built using modern Swift paradigms like **SwiftUI**, **Combine**, and **MVVM** architecture. This project is test-driven, highly modular, and made for scale.
 
-> 💡 Think of DigiHunt as a clean sandbox to demonstrate real-world Swift skills: async data flow, UI state management, mocking, and more.
+> Think of DigiHunt as a clean sandbox to demonstrate real-world Swift skills: async data flow, UI state management, mocking, and more.
 
 ---
 
-## 🧰 Tech Stack Breakdown
+## Tech Stack Breakdown
 
 | Layer       | Tools / Frameworks         | Description |
 |-------------|----------------------------|-------------|
@@ -20,15 +20,15 @@ A sleek and reactive iOS app for exploring Digimon, built using modern Swift par
 
 ---
 
-## ⚙️ Key Features (In-Depth)
+## Key Features (In-Depth)
 
-### 🔁 Reactive Digimon Fetching with Combine
+### Reactive Digimon Fetching with Combine
 - `DigimonViewModel` uses `@Published` properties to automatically update the UI.
 - API calls are wrapped with `Combine` publishers.
 - On success, decoded Digimon list updates the UI via SwiftUI bindings.
 - Error handling? Cleanly handled with `sink(receiveCompletion:)`.
 
-### 🧪 Unit Testing with Fake Services
+### Unit Testing with Fake Services
 - **Dependency Injection** used to inject a `FakeAPIServiceManager`.
 - Test JSON files simulate both **valid** and **invalid** API responses.
 - Includes tests for:
@@ -36,14 +36,14 @@ A sleek and reactive iOS app for exploring Digimon, built using modern Swift par
   - Error conditions
   - UI state updates
 
-### 🧼 Clean SwiftUI Architecture
+### Clean SwiftUI Architecture
 - Single-responsibility `ViewModel`
 - SwiftUI views consume only `@Published` state
 - All updates to the UI are reactive and driven by Combine
 
 ---
 
-## 🏗 Project Structure (Extended)
+## Project Structure (Extended)
 
 ```
 DigiHunt/
@@ -64,7 +64,7 @@ DigiHunt/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. Clone the project:
 
@@ -82,7 +82,7 @@ open DigiHunt/DigiHunt.xcodeproj
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 - Use Xcode’s test navigator (`⌘ + U`)
 - All logic in `DigimonViewModelTests.swift` and `DigiHuntUITests.swift`
